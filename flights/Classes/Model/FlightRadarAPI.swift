@@ -20,6 +20,7 @@ class FlightRadarAPI: NSObject {
             let dataTask = URLSession.shared.dataTask(with: urlRequest, completionHandler: { (data, response, error) in
                 if let error = error {
                     failure(error)
+                    return
                 }
                 
                 if let httpResponse = response as? HTTPURLResponse, let data = data {
@@ -27,12 +28,23 @@ class FlightRadarAPI: NSObject {
                         let parser = FlightParser()
                         if let flight = parser.parseFlight(jsonData: data) {
                             success(flight)
+                            return
+                        } else {
+                            let errorDescription = "Couldn't parse response from server"
+                            let error = FlightsErrors.newErrorWith(message: errorDescription, errorCode: -2001)
+                            failure(error)
+                            return
                         }
                     } else {
-                        //TODO: Create an appropriate error and call failure(error)
+                        let errorDescription = "Something went wrong with the Request (\(httpResponse.statusCode))"
+                        let error = FlightsErrors.newErrorWith(message: errorDescription, errorCode: -2101)
+                        failure(error)
+                        return
                     }
                 } else {
-                    //TODO: Create an appropriate error and call failure(error)
+                    let error = FlightsErrors.newErrorWith(message: "Something went totally wrong", errorCode: -2201)
+                    failure(error)
+                    return
                 }
             })
             
@@ -42,11 +54,12 @@ class FlightRadarAPI: NSObject {
     
     /// Asks the API for the flight position of the flight with IATA-code flightId
     func flightPositionForFlight(withId iataFlightId: String, success: @escaping ([FlightPosition]) -> (), failure: @escaping (Error)->()) {        
-        if let url = URL(string: "https://data-live.flightradar24.com/zones/fcgi/feed.js?maxage=3600&flight=\(iataFlightId)") {
+        if let url = URL(string: "https://data-live.flightradar24.com/zones/fcgi/feed.js?maxage=7200&flight=\(iataFlightId)") {
             let urlRequest = URLRequest(url: url, cachePolicy: URLRequest.CachePolicy.reloadIgnoringLocalAndRemoteCacheData, timeoutInterval: 60.0)
             let dataTask = URLSession.shared.dataTask(with: urlRequest, completionHandler: { (data, response, error) in
                 if let error = error {
                     failure(error)
+                    return
                 }
                 
                 if let httpResponse = response as? HTTPURLResponse, let data = data {
@@ -54,17 +67,23 @@ class FlightRadarAPI: NSObject {
                         let parser = FlightPositionParser()
                         if let flightPositions = parser.parseFlightPositions(jsonData: data) {
                             success(flightPositions)
+                            return
+                        } else {
+                            let errorDescription = "Couldn't parse response from server"
+                            let error = FlightsErrors.newErrorWith(message: errorDescription, errorCode: 2002)
+                            failure(error)
+                            return
                         }
                     } else {
-                        //TODO: Create an appropriate error and call failure(error)
-                        let error = NSError(domain: "flights", code: 100, userInfo: nil)
-                        //error.description = "Response Code was \(httpResponse.statusCode)"
+                        let errorDescription = "Something went wrong with the Request (\(httpResponse.statusCode))"
+                        let error = FlightsErrors.newErrorWith(message: errorDescription, errorCode: 2102)
                         failure(error)
+                        return
                     }
                 } else {
-                    //TODO: Create an appropriate error and call failure(error)
-                    let error = NSError(domain: "flights", code: 100, userInfo: nil)
+                    let error = FlightsErrors.newErrorWith(message: "Something went totally wrong", errorCode: 2202)
                     failure(error)
+                    return
                 }
             })
             

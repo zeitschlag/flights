@@ -22,9 +22,14 @@ class FlightManager: NSObject {
         self.api.getFlight(withIATACode: iataCode, success: { [weak self] (flight) in
             self?.flightPositionForFlight(withId: iataCode, success: { (flightPositions) in
                 
+                guard flightPositions.count > 0 else {
+                    let error = FlightsErrors.newErrorWith(message: "There is no flight in the air with IATA-code \(iataCode)", errorCode: -3000)
+                    failure(error)
+                    return
+                }
+                
                 guard flightPositions.count == 1 else {
-                    //TODO: failure(error)
-                    let error = NSError(domain: "flightpositions", code: 200, userInfo: nil)
+                    let error = FlightsErrors.newErrorWith(message: "There is more than one current position for flight \(iataCode)", errorCode: -3001)
                     failure(error)
                     return
                 }
@@ -32,11 +37,14 @@ class FlightManager: NSObject {
                 flight.currentFlightPosition = flightPositions[0]
                 
                 success(flight)
+                return
             }, failure: { (error) in
                 failure(error)
+                return
             })
         }) { (error) in
             failure(error)
+            return
         }
     }
     

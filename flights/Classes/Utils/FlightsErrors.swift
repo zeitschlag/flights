@@ -10,6 +10,10 @@ import UIKit
 
 class FlightsErrors: NSObject {
     
-    
+    static func newErrorWith(message: String, errorCode: Int) -> Error {
+        let userInfo = [NSLocalizedDescriptionKey: message]
+        let error = NSError(domain: "de.bullenscheisse.flights", code: errorCode, userInfo: userInfo)
+        return error
+    }
 
 }

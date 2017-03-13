@@ -47,8 +47,7 @@ class MainViewController: UIViewController {
                 self?.mapView.setCenter(location, animated: true)
             }
         }) { [weak self] (error) in
-            //TODO: Use error.localizedDescription
-            let alert = UIAlertController(title: "Error", message: "An Error occured", preferredStyle: .alert)
+            let alert = UIAlertController(title: "Something went wrong 😟", message: error.localizedDescription, preferredStyle: .alert)
             let okAction = UIAlertAction(title: "OK", style: .cancel, handler: nil)
             alert.addAction(okAction)
             self?.present(alert, animated: true, completion: nil)
@@ -57,8 +56,8 @@ class MainViewController: UIViewController {
 }
 
 extension MainViewController: MKMapViewDelegate {
+    
     func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
-        
         guard let annotation = annotation as? FlightPositionAnnotation else {
             return nil
         }
@@ -74,15 +73,5 @@ extension MainViewController: MKMapViewDelegate {
             annotationView.canShowCallout = true
             return annotationView
         }
-    }
-}
-
-extension MainViewController: UIScrollViewDelegate {
-    func scrollViewWillBeginDragging(_ scrollView: UIScrollView) {
-        mapView.becomeFirstResponder()
-    }
-    
-    func scrollViewWillBeginZooming(_ scrollView: UIScrollView, with view: UIView?) {
-        mapView.becomeFirstResponder()
     }
 }
