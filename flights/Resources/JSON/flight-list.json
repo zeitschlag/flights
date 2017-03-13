@@ -1,0 +1,419 @@
+/*
+
+  - URL: http://api.flightradar24.com/common/v1/flight/list.json?query=MH8212&fetchBy=flight&filterBy=historic&timestamp=1489334620
+  - Parameters:
+    - query has to be a valid IATA flight id or an Aircraft Registration Number
+    - fetchBy defines, what the query can be (flight | reg | route)
+    - timestamp to search for most current flights (so add the current unix timestamp?)
+
+*/
+
+{
+    "_api": {
+        "copyright": "Copyright (c) 2012-2017 Flightradar24 AB. All rights reserved.",
+        "legalNotice": "The contents of this file and all derived data are the property of Flightradar24 AB for use exclusively by its products and applications. Using, modifying or redistributing the data without the prior written permission of Flightradar24 AB is not allowed and may result in prosecutions.",
+        "version": {
+            "number": "v1.2.4",
+            "timestamp": 1484648036
+        }
+    },
+    "result": {
+        "request": {
+            "callback": null,
+            "device": null,
+            "fetchBy": "flight",
+            "filterBy": null,
+            "format": "json",
+            "limit": 25,
+            "page": 1,
+            "pk": null,
+            "query": "MH8212",
+            "timestamp": null,
+            "token": null
+        },
+        "response": {
+            "aircraftImages": [
+                {
+                    "images": {
+                        "large": [
+                            {
+                                "copyright": "Ian Johnson",
+                                "link": "https://www.jetphotos.com/photo/8530882",
+                                "source": "Jetphotos.com",
+                                "src": "https://cdn.jetphotos.com/640cb/5/36546_1488144079.jpg?v=0"
+                            },
+                            {
+                                "copyright": "TY PANG",
+                                "link": "https://www.jetphotos.com/photo/8528216",
+                                "source": "Jetphotos.com",
+                                "src": "https://cdn.jetphotos.com/640cb/6/45000_1487952056.jpg?v=0"
+                            },
+                            {
+                                "copyright": "Colin Hollywood",
+                                "link": "https://www.jetphotos.com/photo/8502690",
+                                "source": "Jetphotos.com",
+                                "src": "https://cdn.jetphotos.com/640cb/6/38826_1485892713.jpg?v=0"
+                            },
+                            {
+                                "copyright": "M Radzi Desa",
+                                "link": "https://www.jetphotos.com/photo/8476559",
+                                "source": "Jetphotos.com",
+                                "src": "https://cdn.jetphotos.com/640cb/6/59658_1483715636.jpg?v=0"
+                            },
+                            {
+                                "copyright": "Akbarali Mastan",
+                                "link": "https://www.jetphotos.com/photo/8474063",
+                                "source": "Jetphotos.com",
+                                "src": "https://cdn.jetphotos.com/640cb/5/35965_1483482194.jpg?v=0"
+                            }
+                        ],
+                        "medium": [
+                            {
+                                "copyright": "Ian Johnson",
+                                "link": "https://www.jetphotos.com/photo/8530882",
+                                "source": "Jetphotos.com",
+                                "src": "https://cdn.jetphotos.com/400/5/36546_1488144079.jpg?v=0"
+                            },
+                            {
+                                "copyright": "TY PANG",
+                                "link": "https://www.jetphotos.com/photo/8528216",
+                                "source": "Jetphotos.com",
+                                "src": "https://cdn.jetphotos.com/400/6/45000_1487952056.jpg?v=0"
+                            },
+                            {
+                                "copyright": "Colin Hollywood",
+                                "link": "https://www.jetphotos.com/photo/8502690",
+                                "source": "Jetphotos.com",
+                                "src": "https://cdn.jetphotos.com/400/6/38826_1485892713.jpg?v=0"
+                            },
+                            {
+                                "copyright": "M Radzi Desa",
+                                "link": "https://www.jetphotos.com/photo/8476559",
+                                "source": "Jetphotos.com",
+                                "src": "https://cdn.jetphotos.com/400/6/59658_1483715636.jpg?v=0"
+                            },
+                            {
+                                "copyright": "Akbarali Mastan",
+                                "link": "https://www.jetphotos.com/photo/8474063",
+                                "source": "Jetphotos.com",
+                                "src": "https://cdn.jetphotos.com/400/5/35965_1483482194.jpg?v=0"
+                            }
+                        ],
+                        "thumbnails": [
+                            {
+                                "copyright": "Ian Johnson",
+                                "link": "https://www.jetphotos.com/photo/8530882",
+                                "source": "Jetphotos.com",
+                                "src": "https://cdn.jetphotos.com/200/5/36546_1488144079_tb.jpg?v=0"
+                            },
+                            {
+                                "copyright": "TY PANG",
+                                "link": "https://www.jetphotos.com/photo/8528216",
+                                "source": "Jetphotos.com",
+                                "src": "https://cdn.jetphotos.com/200/6/45000_1487952056_tb.jpg?v=0"
+                            },
+                            {
+                                "copyright": "Colin Hollywood",
+                                "link": "https://www.jetphotos.com/photo/8502690",
+                                "source": "Jetphotos.com",
+                                "src": "https://cdn.jetphotos.com/200/6/38826_1485892713_tb.jpg?v=0"
+                            },
+                            {
+                                "copyright": "M Radzi Desa",
+                                "link": "https://www.jetphotos.com/photo/8476559",
+                                "source": "Jetphotos.com",
+                                "src": "https://cdn.jetphotos.com/200/6/59658_1483715636_tb.jpg?v=0"
+                            },
+                            {
+                                "copyright": "Akbarali Mastan",
+                                "link": "https://www.jetphotos.com/photo/8474063",
+                                "source": "Jetphotos.com",
+                                "src": "https://cdn.jetphotos.com/200/5/35965_1483482194_tb.jpg?v=0"
+                            }
+                        ]
+                    },
+                    "registration": "9M-MNC"
+                }
+            ],
+            "aircraftInfo": null,
+            "data": [
+                {
+                    "aircraft": {
+                        "age": null,
+                        "availability": {
+                            "age": null,
+                            "serialNo": null
+                        },
+                        "hex": null,
+                        "model": {
+                            "code": "380",
+                            "text": null
+                        },
+                        "registration": null,
+                        "restricted": null,
+                        "serialNo": null
+                    },
+                    "airline": {
+                        "code": {
+                            "iata": "MH",
+                            "icao": "MAS"
+                        },
+                        "name": "Malaysia Airlines",
+                        "short": "Malaysia Airlines"
+                    },
+                    "airport": {
+                        "destination": {
+                            "code": {
+                                "iata": "MED",
+                                "icao": "OEMA"
+                            },
+                            "name": "Medina Prince Mohammad bin Abdulaziz Airport",
+                            "position": {
+                                "country": {
+                                    "code": "SA",
+                                    "name": "Saudi Arabia"
+                                },
+                                "latitude": 24.553419,
+                                "longitude": 39.705059,
+                                "region": {
+                                    "city": "Medina"
+                                }
+                            },
+                            "timezone": {
+                                "abbr": "+03",
+                                "abbrName": null,
+                                "isDst": false,
+                                "name": "Asia/Riyadh",
+                                "offset": 10800
+                            },
+                            "visible": true
+                        },
+                        "origin": {
+                            "code": {
+                                "iata": "KUL",
+                                "icao": "WMKK"
+                            },
+                            "name": "Kuala Lumpur International Airport",
+                            "position": {
+                                "country": {
+                                    "code": "MY",
+                                    "name": "Malaysia"
+                                },
+                                "latitude": 2.745578,
+                                "longitude": 101.7099,
+                                "region": {
+                                    "city": "Kuala Lumpur"
+                                }
+                            },
+                            "timezone": {
+                                "abbr": "+08",
+                                "abbrName": null,
+                                "isDst": false,
+                                "name": "Asia/Kuala_Lumpur",
+                                "offset": 28800
+                            },
+                            "visible": true
+                        },
+                        "real": null
+                    },
+                    "identification": {
+                        "callsign": null,
+                        "codeshare": null,
+                        "id": null,
+                        "number": {
+                            "alternative": null,
+                            "default": "MH8212"
+                        },
+                        "row": 3850168860
+                    },
+                    "owner": null,
+                    "status": {
+                        "ambiguous": false,
+                        "estimated": null,
+                        "generic": {
+                            "eventTime": {
+                                "local": null,
+                                "utc": null
+                            },
+                            "status": {
+                                "color": "gray",
+                                "diverted": null,
+                                "text": "scheduled",
+                                "type": "departure"
+                            }
+                        },
+                        "icon": null,
+                        "live": false,
+                        "text": "Scheduled"
+                    },
+                    "time": {
+                        "estimated": {
+                            "arrival": null,
+                            "departure": null
+                        },
+                        "other": {
+                            "duration": null,
+                            "eta": null,
+                            "updated": 1489284174
+                        },
+                        "real": {
+                            "arrival": null,
+                            "departure": null
+                        },
+                        "scheduled": {
+                            "arrival": 1489932600,
+                            "departure": 1489899600
+                        }
+                    }
+                },
+                {
+                    "aircraft": {
+                        "age": {
+                            "availability": true
+                        },
+                        "availability": {
+                            "age": true,
+                            "serialNo": true
+                        },
+                        "hex": "750290",
+                        "model": {
+                            "code": "A388",
+                            "text": "Airbus A380-841"
+                        },
+                        "registration": "9M-MNC",
+                        "restricted": false,
+                        "serialNo": null
+                    },
+                    "airline": {
+                        "code": {
+                            "iata": "MH",
+                            "icao": "MAS"
+                        },
+                        "name": "Malaysia Airlines",
+                        "short": "Malaysia Airlines"
+                    },
+                    "airport": {
+                        "destination": {
+                            "code": {
+                                "iata": "MED",
+                                "icao": "OEMA"
+                            },
+                            "name": "Medina Prince Mohammad bin Abdulaziz Airport",
+                            "position": {
+                                "country": {
+                                    "code": "SA",
+                                    "name": "Saudi Arabia"
+                                },
+                                "latitude": 24.553419,
+                                "longitude": 39.705059,
+                                "region": {
+                                    "city": "Medina"
+                                }
+                            },
+                            "timezone": {
+                                "abbr": "+03",
+                                "abbrName": null,
+                                "isDst": false,
+                                "name": "Asia/Riyadh",
+                                "offset": 10800
+                            },
+                            "visible": true
+                        },
+                        "origin": {
+                            "code": {
+                                "iata": "KUL",
+                                "icao": "WMKK"
+                            },
+                            "name": "Kuala Lumpur International Airport",
+                            "position": {
+                                "country": {
+                                    "code": "MY",
+                                    "name": "Malaysia"
+                                },
+                                "latitude": 2.745578,
+                                "longitude": 101.7099,
+                                "region": {
+                                    "city": "Kuala Lumpur"
+                                }
+                            },
+                            "timezone": {
+                                "abbr": "+08",
+                                "abbrName": null,
+                                "isDst": false,
+                                "name": "Asia/Kuala_Lumpur",
+                                "offset": 28800
+                            },
+                            "visible": true
+                        },
+                        "real": null
+                    },
+                    "identification": {
+                        "callsign": "MAS8212",
+                        "codeshare": null,
+                        "id": "cb68024",
+                        "number": {
+                            "alternative": null,
+                            "default": "MH8212"
+                        },
+                        "row": 3839048182
+                    },
+                    "owner": {
+                        "code": {
+                            "iata": "MH",
+                            "icao": "MAS"
+                        },
+                        "name": "Malaysia Airlines"
+                    },
+                    "status": {
+                        "ambiguous": false,
+                        "estimated": null,
+                        "generic": {
+                            "eventTime": {
+                                "local": 1489342859,
+                                "utc": 1489332059
+                            },
+                            "status": {
+                                "color": "green",
+                                "diverted": null,
+                                "text": "estimated",
+                                "type": "arrival"
+                            }
+                        },
+                        "icon": "green",
+                        "live": true,
+                        "text": "Estimated 18:20"
+                    },
+                    "time": {
+                        "estimated": {
+                            "arrival": 1489332059,
+                            "departure": null
+                        },
+                        "other": {
+                            "duration": null,
+                            "eta": 1489332059,
+                            "updated": 1489300537
+                        },
+                        "real": {
+                            "arrival": null,
+                            "departure": 1489300052
+                        },
+                        "scheduled": {
+                            "arrival": 1489331400,
+                            "departure": 1489298400
+                        }
+                    }
+                }
+            ],
+            "item": {
+                "current": 2,
+                "limit": 25,
+                "total": null
+            },
+            "page": {
+                "current": 1,
+                "total": null
+            },
+            "timestamp": 1489316604
+        }
+    }
+}

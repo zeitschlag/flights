@@ -1,0 +1,1206 @@
+// URL: https://data-live.flightradar24.com/clickhandler/?version=1.5&flight=cb4ba3a
+{
+    "aircraft": {
+        "age": null, // Alter
+        "hex": "406544", 
+        "images": { // Images
+            "c": 86400,
+            "large": [
+                {
+                    "copyright": "Paul Nichols",
+                    "link": "https://www.jetphotos.com/photo/8512875",
+                    "source": "Jetphotos.com",
+                    "src": "https://cdn.jetphotos.com/640cb/6/25107_1486666257.jpg?v=0"
+                },
+                {
+                    "copyright": "JonathanPalombo",
+                    "link": "https://www.jetphotos.com/photo/8386547",
+                    "source": "Jetphotos.com",
+                    "src": "https://cdn.jetphotos.com/640cb/6/88436_1474217941.jpg?v=0"
+                },
+                {
+                    "copyright": "Milan Mikac",
+                    "link": "https://www.jetphotos.com/photo/8364222",
+                    "source": "Jetphotos.com",
+                    "src": "https://cdn.jetphotos.com/640cb/6/11491_1471801746.jpg?v=0"
+                },
+                {
+                    "copyright": "Serge Dejonckheere",
+                    "link": "https://www.jetphotos.com/photo/8406907",
+                    "source": "Jetphotos.com",
+                    "src": "https://cdn.jetphotos.com/640cb/5/78632_1476537229.jpg?v=0"
+                },
+                {
+                    "copyright": "Eddie Heisterkamp",
+                    "link": "https://www.jetphotos.com/photo/8313047",
+                    "source": "Jetphotos.com",
+                    "src": "https://cdn.jetphotos.com/640cb/5/25590_1467058574.jpg?v=0"
+                }
+            ],
+            "medium": [
+                {
+                    "copyright": "Paul Nichols",
+                    "link": "https://www.jetphotos.com/photo/8512875",
+                    "source": "Jetphotos.com",
+                    "src": "https://cdn.jetphotos.com/400/6/25107_1486666257.jpg?v=0"
+                },
+                {
+                    "copyright": "JonathanPalombo",
+                    "link": "https://www.jetphotos.com/photo/8386547",
+                    "source": "Jetphotos.com",
+                    "src": "https://cdn.jetphotos.com/400/6/88436_1474217941.jpg?v=0"
+                },
+                {
+                    "copyright": "Milan Mikac",
+                    "link": "https://www.jetphotos.com/photo/8364222",
+                    "source": "Jetphotos.com",
+                    "src": "https://cdn.jetphotos.com/400/6/11491_1471801746.jpg?v=0"
+                },
+                {
+                    "copyright": "Serge Dejonckheere",
+                    "link": "https://www.jetphotos.com/photo/8406907",
+                    "source": "Jetphotos.com",
+                    "src": "https://cdn.jetphotos.com/400/5/78632_1476537229.jpg?v=0"
+                },
+                {
+                    "copyright": "Eddie Heisterkamp",
+                    "link": "https://www.jetphotos.com/photo/8313047",
+                    "source": "Jetphotos.com",
+                    "src": "https://cdn.jetphotos.com/400/5/25590_1467058574.jpg?v=0"
+                }
+            ],
+            "thumbnails": [
+                {
+                    "copyright": "Paul Nichols",
+                    "link": "https://www.jetphotos.com/photo/8512875",
+                    "source": "Jetphotos.com",
+                    "src": "https://cdn.jetphotos.com/200/6/25107_1486666257_tb.jpg?v=0"
+                },
+                {
+                    "copyright": "JonathanPalombo",
+                    "link": "https://www.jetphotos.com/photo/8386547",
+                    "source": "Jetphotos.com",
+                    "src": "https://cdn.jetphotos.com/200/6/88436_1474217941_tb.jpg?v=0"
+                },
+                {
+                    "copyright": "Milan Mikac",
+                    "link": "https://www.jetphotos.com/photo/8364222",
+                    "source": "Jetphotos.com",
+                    "src": "https://cdn.jetphotos.com/200/6/11491_1471801746_tb.jpg?v=0"
+                },
+                {
+                    "copyright": "Serge Dejonckheere",
+                    "link": "https://www.jetphotos.com/photo/8406907",
+                    "source": "Jetphotos.com",
+                    "src": "https://cdn.jetphotos.com/200/5/78632_1476537229_tb.jpg?v=0"
+                },
+                {
+                    "copyright": "Eddie Heisterkamp",
+                    "link": "https://www.jetphotos.com/photo/8313047",
+                    "source": "Jetphotos.com",
+                    "src": "https://cdn.jetphotos.com/200/5/25590_1467058574_tb.jpg?v=0"
+                }
+            ]
+        }, // Bilder
+        "model": { // Flugzeugtyp
+            "code": "A320",
+            "text": "Airbus A320-214"
+        },
+        "msn": null,
+        "registration": "G-EZUK" // Registrierungsnummer
+    },
+    "airline": {
+        "code": {
+            "iata": "U2",
+            "icao": "EZY"
+        },
+        "name": "EasyJet",
+        "short": "EasyJet",
+        "url": "easyjet-ezy"
+    },
+    "airport": {
+        "destination": {
+            "code": {
+                "iata": "LCA",
+                "icao": "LCLK"
+            },
+            "info": {
+                "baggage": null,
+                "gate": null,
+                "terminal": null
+            },
+            "name": "Larnaca International Airport",
+            "position": {
+                "altitude": "8",
+                "country": {
+                    "code": "CYP",
+                    "name": "Cyprus"
+                },
+                "latitude": 34.875111,
+                "longitude": 33.624851,
+                "region": {
+                    "city": "Larnaca"
+                }
+            },
+            "timezone": {
+                "abbr": "EET",
+                "abbrName": "Eastern European Time",
+                "isDst": false,
+                "name": "Asia/Nicosia",
+                "offset": 7200,
+                "offsetHours": "2:00"
+            },
+            "visible": true,
+            "website": "http://www.cyprusairports.com.cy/"
+        },
+        "origin": {
+            "code": {
+                "iata": "SXF",
+                "icao": "EDDB"
+            },
+            "info": {
+                "baggage": null,
+                "gate": "65",
+                "terminal": null
+            },
+            "name": "Berlin Schonefeld Airport",
+            "position": {
+                "altitude": "157",
+                "country": {
+                    "code": "DEU",
+                    "name": "Germany"
+                },
+                "latitude": 52.380001,
+                "longitude": 13.5225,
+                "region": {
+                    "city": "Berlin"
+                }
+            },
+            "timezone": {
+                "abbr": "CET",
+                "abbrName": "Central European Time",
+                "isDst": false,
+                "name": "Europe/Berlin",
+                "offset": 3600,
+                "offsetHours": "1:00"
+            },
+            "visible": true,
+            "website": "http://www.berlin-airport.de/EN/index.php?lang=en&direction=BW&airport=SXF"
+        },
+        "real": null
+    },
+    "airspace": null,
+    "availability": [
+        "AGE",
+        "MSN"
+    ],
+    "ems": null,
+    "firstTimestamp": 1489236799,
+    "flightHistory": {
+        "aircraft": [
+            {
+                "airport": {
+                    "destination": {
+                        "code": {
+                            "iata": "SXF",
+                            "icao": "EDDB"
+                        },
+                        "name": "Berlin Schonefeld Airport",
+                        "position": {
+                            "altitude": "157",
+                            "country": {
+                                "code": "DEU",
+                                "name": "Germany"
+                            },
+                            "latitude": 52.380001,
+                            "longitude": 13.5225,
+                            "region": {
+                                "city": "Berlin"
+                            }
+                        },
+                        "timezone": {
+                            "abbr": "CET",
+                            "abbrName": "Central European Time",
+                            "isDst": false,
+                            "name": "Europe/Berlin",
+                            "offset": 3600,
+                            "offsetHours": "1:00"
+                        },
+                        "visible": true,
+                        "website": "http://www.berlin-airport.de/EN/index.php?lang=en&direction=BW&airport=SXF"
+                    },
+                    "origin": {
+                        "code": {
+                            "iata": "SKG",
+                            "icao": "LGTS"
+                        },
+                        "name": "Thessaloniki International Airport",
+                        "position": {
+                            "altitude": "22",
+                            "country": {
+                                "code": "GRC",
+                                "name": "Greece"
+                            },
+                            "latitude": 40.519718,
+                            "longitude": 22.970949,
+                            "region": {
+                                "city": "Thessaloniki"
+                            }
+                        },
+                        "timezone": {
+                            "abbr": "EET",
+                            "abbrName": "Eastern European Time",
+                            "isDst": false,
+                            "name": "Europe/Athens",
+                            "offset": 7200,
+                            "offsetHours": "2:00"
+                        },
+                        "visible": true,
+                        "website": "http://www.hcaa.gr/content/index.asp?tid=121&lang=2"
+                    }
+                },
+                "identification": {
+                    "id": "cb44f9d",
+                    "number": {
+                        "default": "U24602"
+                    }
+                },
+                "time": {
+                    "real": {
+                        "departure": 1489222143
+                    }
+                }
+            },
+            {
+                "airport": {
+                    "destination": {
+                        "code": {
+                            "iata": "SKG",
+                            "icao": "LGTS"
+                        },
+                        "name": "Thessaloniki International Airport",
+                        "position": {
+                            "altitude": "22",
+                            "country": {
+                                "code": "GRC",
+                                "name": "Greece"
+                            },
+                            "latitude": 40.519718,
+                            "longitude": 22.970949,
+                            "region": {
+                                "city": "Thessaloniki"
+                            }
+                        },
+                        "timezone": {
+                            "abbr": "EET",
+                            "abbrName": "Eastern European Time",
+                            "isDst": false,
+                            "name": "Europe/Athens",
+                            "offset": 7200,
+                            "offsetHours": "2:00"
+                        },
+                        "visible": true,
+                        "website": "http://www.hcaa.gr/content/index.asp?tid=121&lang=2"
+                    },
+                    "origin": {
+                        "code": {
+                            "iata": "SXF",
+                            "icao": "EDDB"
+                        },
+                        "name": "Berlin Schonefeld Airport",
+                        "position": {
+                            "altitude": "157",
+                            "country": {
+                                "code": "DEU",
+                                "name": "Germany"
+                            },
+                            "latitude": 52.380001,
+                            "longitude": 13.5225,
+                            "region": {
+                                "city": "Berlin"
+                            }
+                        },
+                        "timezone": {
+                            "abbr": "CET",
+                            "abbrName": "Central European Time",
+                            "isDst": false,
+                            "name": "Europe/Berlin",
+                            "offset": 3600,
+                            "offsetHours": "1:00"
+                        },
+                        "visible": true,
+                        "website": "http://www.berlin-airport.de/EN/index.php?lang=en&direction=BW&airport=SXF"
+                    }
+                },
+                "identification": {
+                    "id": "cb414b3",
+                    "number": {
+                        "default": "U24601"
+                    }
+                },
+                "time": {
+                    "real": {
+                        "departure": 1489210885
+                    }
+                }
+            },
+            {
+                "airport": {
+                    "destination": {
+                        "code": {
+                            "iata": "SXF",
+                            "icao": "EDDB"
+                        },
+                        "name": "Berlin Schonefeld Airport",
+                        "position": {
+                            "altitude": "157",
+                            "country": {
+                                "code": "DEU",
+                                "name": "Germany"
+                            },
+                            "latitude": 52.380001,
+                            "longitude": 13.5225,
+                            "region": {
+                                "city": "Berlin"
+                            }
+                        },
+                        "timezone": {
+                            "abbr": "CET",
+                            "abbrName": "Central European Time",
+                            "isDst": false,
+                            "name": "Europe/Berlin",
+                            "offset": 3600,
+                            "offsetHours": "1:00"
+                        },
+                        "visible": true,
+                        "website": "http://www.berlin-airport.de/EN/index.php?lang=en&direction=BW&airport=SXF"
+                    },
+                    "origin": {
+                        "code": {
+                            "iata": "BCN",
+                            "icao": "LEBL"
+                        },
+                        "name": "Barcelona El Prat Airport",
+                        "position": {
+                            "altitude": "12",
+                            "country": {
+                                "code": "ESP",
+                                "name": "Spain"
+                            },
+                            "latitude": 41.29707,
+                            "longitude": 2.078463,
+                            "region": {
+                                "city": "Barcelona"
+                            }
+                        },
+                        "timezone": {
+                            "abbr": "CET",
+                            "abbrName": "Central European Time",
+                            "isDst": false,
+                            "name": "Europe/Madrid",
+                            "offset": 3600,
+                            "offsetHours": "1:00"
+                        },
+                        "visible": true,
+                        "website": "http://www.aena-aeropuertos.es/csee/Satellite/Aeropuerto-Barcelona/en/"
+                    }
+                },
+                "identification": {
+                    "id": "cb06f97",
+                    "number": {
+                        "default": "U24536"
+                    }
+                },
+                "time": {
+                    "real": {
+                        "departure": 1489094755
+                    }
+                }
+            },
+            {
+                "airport": {
+                    "destination": {
+                        "code": {
+                            "iata": "BCN",
+                            "icao": "LEBL"
+                        },
+                        "name": "Barcelona El Prat Airport",
+                        "position": {
+                            "altitude": "12",
+                            "country": {
+                                "code": "ESP",
+                                "name": "Spain"
+                            },
+                            "latitude": 41.29707,
+                            "longitude": 2.078463,
+                            "region": {
+                                "city": "Barcelona"
+                            }
+                        },
+                        "timezone": {
+                            "abbr": "CET",
+                            "abbrName": "Central European Time",
+                            "isDst": false,
+                            "name": "Europe/Madrid",
+                            "offset": 3600,
+                            "offsetHours": "1:00"
+                        },
+                        "visible": true,
+                        "website": "http://www.aena-aeropuertos.es/csee/Satellite/Aeropuerto-Barcelona/en/"
+                    },
+                    "origin": {
+                        "code": {
+                            "iata": "SXF",
+                            "icao": "EDDB"
+                        },
+                        "name": "Berlin Schonefeld Airport",
+                        "position": {
+                            "altitude": "157",
+                            "country": {
+                                "code": "DEU",
+                                "name": "Germany"
+                            },
+                            "latitude": 52.380001,
+                            "longitude": 13.5225,
+                            "region": {
+                                "city": "Berlin"
+                            }
+                        },
+                        "timezone": {
+                            "abbr": "CET",
+                            "abbrName": "Central European Time",
+                            "isDst": false,
+                            "name": "Europe/Berlin",
+                            "offset": 3600,
+                            "offsetHours": "1:00"
+                        },
+                        "visible": true,
+                        "website": "http://www.berlin-airport.de/EN/index.php?lang=en&direction=BW&airport=SXF"
+                    }
+                },
+                "identification": {
+                    "id": "cafc6f9",
+                    "number": {
+                        "default": "U24535"
+                    }
+                },
+                "time": {
+                    "real": {
+                        "departure": 1489078141
+                    }
+                }
+            }
+        ]
+    },
+    "identification": {
+        "callsign": "EZY4727",
+        "id": "cb4ba3a",
+        "number": {
+            "alternative": null,
+            "default": "U24727"
+        },
+        "row": 3837405003
+    },
+    "level": "limited",
+    "owner": null,
+    "s": "hrjXDN2D8lO7Va8eb1NybiLx9jDo7c_mPMunMuXldqc",
+    "status": {
+        "ambiguous": false,
+        "estimated": null,
+        "generic": {
+            "eventTime": {
+                "local": 1489257632,
+                "utc": 1489250432
+            },
+            "status": {
+                "color": "green",
+                "text": "estimated",
+                "type": "arrival"
+            }
+        },
+        "icon": "green",
+        "live": true,
+        "text": "Estimated- 18:40"
+    },
+    "time": {
+        "estimated": {
+            "arrival": 1489250432,
+            "departure": null
+        },
+        "historical": {
+            "delay": "-1004", // 
+            "flighttime": "12115" // Restflugzeit
+        },
+        "other": {
+            "eta": 1489250432,
+            "updated": 1489238953
+        },
+        "real": {
+            "arrival": null,
+            "departure": 1489237483
+        },
+        "scheduled": {
+            "arrival": 1489250100,
+            "departure": 1489236000
+        }
+    },
+    // Aktueller Flug
+    "trail": [
+        {
+            "alt": 33000, // Höhe
+            "hd": 137,// Track, Kurs
+            "lat": 50.012371,
+            "lng": 15.595613,
+            "spd": 506,
+            "ts": 1489238995
+        },
+        {
+            "alt": 33000,
+            "hd": 137,
+            "lat": 50.126862,
+            "lng": 15.434707,
+            "spd": 509,
+            "ts": 1489238929
+        },
+        {
+            "alt": 32325,
+            "hd": 137,
+            "lat": 50.233028,
+            "lng": 15.284358,
+            "spd": 508,
+            "ts": 1489238868
+        },
+        {
+            "alt": 31400,
+            "hd": 137,
+            "lat": 50.344666,
+            "lng": 15.125211,
+            "spd": 510,
+            "ts": 1489238805
+        },
+        {
+            "alt": 30500,
+            "hd": 137,
+            "lat": 50.450291,
+            "lng": 14.974069,
+            "spd": 509,
+            "ts": 1489238742
+        },
+        {
+            "alt": 29250,
+            "hd": 137,
+            "lat": 50.559639,
+            "lng": 14.816103,
+            "spd": 513,
+            "ts": 1489238679
+        },
+        {
+            "alt": 28100,
+            "hd": 137,
+            "lat": 50.671051,
+            "lng": 14.654966,
+            "spd": 513,
+            "ts": 1489238616
+        },
+        {
+            "alt": 27150,
+            "hd": 136,
+            "lat": 50.775318,
+            "lng": 14.502716,
+            "spd": 507,
+            "ts": 1489238555
+        },
+        {
+            "alt": 27000,
+            "hd": 136,
+            "lat": 50.789749,
+            "lng": 14.480972,
+            "spd": 507,
+            "ts": 1489238547
+        },
+        {
+            "alt": 26900,
+            "hd": 139,
+            "lat": 50.800735,
+            "lng": 14.464874,
+            "spd": 508,
+            "ts": 1489238540
+        },
+        {
+            "alt": 26775,
+            "hd": 145,
+            "lat": 50.816528,
+            "lng": 14.445091,
+            "spd": 511,
+            "ts": 1489238532
+        },
+        {
+            "alt": 26675,
+            "hd": 149,
+            "lat": 50.828293,
+            "lng": 14.432843,
+            "spd": 512,
+            "ts": 1489238526
+        },
+        {
+            "alt": 25850,
+            "hd": 155,
+            "lat": 50.933224,
+            "lng": 14.363022,
+            "spd": 509,
+            "ts": 1489238477
+        },
+        {
+            "alt": 24650,
+            "hd": 153,
+            "lat": 51.064827,
+            "lng": 14.258194,
+            "spd": 502,
+            "ts": 1489238414
+        },
+        {
+            "alt": 23375,
+            "hd": 152,
+            "lat": 51.194752,
+            "lng": 14.152985,
+            "spd": 494,
+            "ts": 1489238351
+        },
+        {
+            "alt": 22300,
+            "hd": 152,
+            "lat": 51.321396,
+            "lng": 14.049807,
+            "spd": 475,
+            "ts": 1489238288
+        },
+        {
+            "alt": 20900,
+            "hd": 152,
+            "lat": 51.443295,
+            "lng": 13.94989,
+            "spd": 464,
+            "ts": 1489238225
+        },
+        {
+            "alt": 20275,
+            "hd": 152,
+            "lat": 51.55632,
+            "lng": 13.856358,
+            "spd": 427,
+            "ts": 1489238164
+        },
+        {
+            "alt": 18100,
+            "hd": 152,
+            "lat": 51.664371,
+            "lng": 13.766708,
+            "spd": 432,
+            "ts": 1489238102
+        },
+        {
+            "alt": 17125,
+            "hd": 152,
+            "lat": 51.725494,
+            "lng": 13.715744,
+            "spd": 428,
+            "ts": 1489238068
+        },
+        {
+            "alt": 16125,
+            "hd": 152,
+            "lat": 51.780624,
+            "lng": 13.66959,
+            "spd": 422,
+            "ts": 1489238035
+        },
+        {
+            "alt": 15025,
+            "hd": 152,
+            "lat": 51.841324,
+            "lng": 13.618815,
+            "spd": 416,
+            "ts": 1489238002
+        },
+        {
+            "alt": 14275,
+            "hd": 152,
+            "lat": 51.889938,
+            "lng": 13.577914,
+            "spd": 406,
+            "ts": 1489237971
+        },
+        {
+            "alt": 13375,
+            "hd": 152,
+            "lat": 51.944431,
+            "lng": 13.532018,
+            "spd": 392,
+            "ts": 1489237938
+        },
+        {
+            "alt": 12250,
+            "hd": 152,
+            "lat": 51.997421,
+            "lng": 13.487396,
+            "spd": 383,
+            "ts": 1489237905
+        },
+        {
+            "alt": 11875,
+            "hd": 152,
+            "lat": 52.015049,
+            "lng": 13.472456,
+            "spd": 378,
+            "ts": 1489237893
+        },
+        {
+            "alt": 11550,
+            "hd": 152,
+            "lat": 52.03381,
+            "lng": 13.456447,
+            "spd": 373,
+            "ts": 1489237881
+        },
+        {
+            "alt": 11225,
+            "hd": 152,
+            "lat": 52.051712,
+            "lng": 13.441238,
+            "spd": 367,
+            "ts": 1489237869
+        },
+        {
+            "alt": 11000,
+            "hd": 152,
+            "lat": 52.069794,
+            "lng": 13.425842,
+            "spd": 355,
+            "ts": 1489237857
+        },
+        {
+            "alt": 10825,
+            "hd": 152,
+            "lat": 52.087021,
+            "lng": 13.411246,
+            "spd": 344,
+            "ts": 1489237845
+        },
+        {
+            "alt": 10650,
+            "hd": 152,
+            "lat": 52.103668,
+            "lng": 13.397141,
+            "spd": 333,
+            "ts": 1489237833
+        },
+        {
+            "alt": 10425,
+            "hd": 152,
+            "lat": 52.120331,
+            "lng": 13.383102,
+            "spd": 320,
+            "ts": 1489237822
+        },
+        {
+            "alt": 10000,
+            "hd": 152,
+            "lat": 52.136177,
+            "lng": 13.369812,
+            "spd": 316,
+            "ts": 1489237809
+        },
+        {
+            "alt": 9550,
+            "hd": 152,
+            "lat": 52.151962,
+            "lng": 13.356552,
+            "spd": 313,
+            "ts": 1489237797
+        },
+        {
+            "alt": 9150,
+            "hd": 153,
+            "lat": 52.167801,
+            "lng": 13.343353,
+            "spd": 307,
+            "ts": 1489237785
+        },
+        {
+            "alt": 8800,
+            "hd": 153,
+            "lat": 52.182266,
+            "lng": 13.331438,
+            "spd": 301,
+            "ts": 1489237773
+        },
+        {
+            "alt": 8525,
+            "hd": 153,
+            "lat": 52.19664,
+            "lng": 13.319626,
+            "spd": 290,
+            "ts": 1489237761
+        },
+        {
+            "alt": 8325,
+            "hd": 153,
+            "lat": 52.211197,
+            "lng": 13.307724,
+            "spd": 275,
+            "ts": 1489237749
+        },
+        {
+            "alt": 8050,
+            "hd": 153,
+            "lat": 52.224609,
+            "lng": 13.296814,
+            "spd": 265,
+            "ts": 1489237737
+        },
+        {
+            "alt": 7575,
+            "hd": 152,
+            "lat": 52.238083,
+            "lng": 13.285767,
+            "spd": 262,
+            "ts": 1489237725
+        },
+        {
+            "alt": 7050,
+            "hd": 151,
+            "lat": 52.25116,
+            "lng": 13.274689,
+            "spd": 260,
+            "ts": 1489237713
+        },
+        {
+            "alt": 6500,
+            "hd": 150,
+            "lat": 52.266632,
+            "lng": 13.260956,
+            "spd": 255,
+            "ts": 1489237698
+        },
+        {
+            "alt": 6325,
+            "hd": 151,
+            "lat": 52.272575,
+            "lng": 13.255554,
+            "spd": 253,
+            "ts": 1489237692
+        },
+        {
+            "alt": 5950,
+            "hd": 196,
+            "lat": 52.300278,
+            "lng": 13.246307,
+            "spd": 226,
+            "ts": 1489237666
+        },
+        {
+            "alt": 5800,
+            "hd": 206,
+            "lat": 52.305954,
+            "lng": 13.249434,
+            "spd": 223,
+            "ts": 1489237659
+        },
+        {
+            "alt": 5625,
+            "hd": 219,
+            "lat": 52.311214,
+            "lng": 13.254613,
+            "spd": 219,
+            "ts": 1489237653
+        },
+        {
+            "alt": 5450,
+            "hd": 234,
+            "lat": 52.31575,
+            "lng": 13.261642,
+            "spd": 215,
+            "ts": 1489237647
+        },
+        {
+            "alt": 5000,
+            "hd": 250,
+            "lat": 52.321381,
+            "lng": 13.279724,
+            "spd": 214,
+            "ts": 1489237635
+        },
+        {
+            "alt": 4750,
+            "hd": 251,
+            "lat": 52.323532,
+            "lng": 13.289871,
+            "spd": 213,
+            "ts": 1489237629
+        },
+        {
+            "alt": 4575,
+            "hd": 251,
+            "lat": 52.325275,
+            "lng": 13.298244,
+            "spd": 212,
+            "ts": 1489237623
+        },
+        {
+            "alt": 4375,
+            "hd": 251,
+            "lat": 52.327183,
+            "lng": 13.307347,
+            "spd": 211,
+            "ts": 1489237617
+        },
+        {
+            "alt": 4200,
+            "hd": 250,
+            "lat": 52.329117,
+            "lng": 13.31665,
+            "spd": 209,
+            "ts": 1489237611
+        },
+        {
+            "alt": 3850,
+            "hd": 250,
+            "lat": 52.331978,
+            "lng": 13.329947,
+            "spd": 209,
+            "ts": 1489237602
+        },
+        {
+            "alt": 3600,
+            "hd": 250,
+            "lat": 52.333969,
+            "lng": 13.339233,
+            "spd": 210,
+            "ts": 1489237595
+        },
+        {
+            "alt": 3250,
+            "hd": 249,
+            "lat": 52.336864,
+            "lng": 13.352234,
+            "spd": 210,
+            "ts": 1489237587
+        },
+        {
+            "alt": 3025,
+            "hd": 248,
+            "lat": 52.3391,
+            "lng": 13.36173,
+            "spd": 210,
+            "ts": 1489237580
+        },
+        {
+            "alt": 2800,
+            "hd": 247,
+            "lat": 52.341431,
+            "lng": 13.371277,
+            "spd": 209,
+            "ts": 1489237574
+        },
+        {
+            "alt": 2650,
+            "hd": 247,
+            "lat": 52.343399,
+            "lng": 13.379059,
+            "spd": 208,
+            "ts": 1489237568
+        },
+        {
+            "alt": 2400,
+            "hd": 248,
+            "lat": 52.345688,
+            "lng": 13.38829,
+            "spd": 206,
+            "ts": 1489237562
+        },
+        {
+            "alt": 2200,
+            "hd": 248,
+            "lat": 52.34761,
+            "lng": 13.396301,
+            "spd": 207,
+            "ts": 1489237556
+        },
+        {
+            "alt": 1975,
+            "hd": 249,
+            "lat": 52.349762,
+            "lng": 13.40536,
+            "spd": 206,
+            "ts": 1489237550
+        },
+        {
+            "alt": 1800,
+            "hd": 249,
+            "lat": 52.351685,
+            "lng": 13.413773,
+            "spd": 204,
+            "ts": 1489237544
+        },
+        {
+            "alt": 1675,
+            "hd": 250,
+            "lat": 52.353672,
+            "lng": 13.422625,
+            "spd": 199,
+            "ts": 1489237538
+        },
+        {
+            "alt": 1600,
+            "hd": 249,
+            "lat": 52.355579,
+            "lng": 13.431257,
+            "spd": 192,
+            "ts": 1489237532
+        },
+        {
+            "alt": 1525,
+            "hd": 249,
+            "lat": 52.357441,
+            "lng": 13.43934,
+            "spd": 183,
+            "ts": 1489237526
+        },
+        {
+            "alt": 1400,
+            "hd": 250,
+            "lat": 52.359909,
+            "lng": 13.450483,
+            "spd": 173,
+            "ts": 1489237518
+        },
+        {
+            "alt": 1275,
+            "hd": 250,
+            "lat": 52.361538,
+            "lng": 13.457781,
+            "spd": 168,
+            "ts": 1489237512
+        },
+        {
+            "alt": 1075,
+            "hd": 250,
+            "lat": 52.363167,
+            "lng": 13.465393,
+            "spd": 164,
+            "ts": 1489237505
+        },
+        {
+            "alt": 775,
+            "hd": 249,
+            "lat": 52.364609,
+            "lng": 13.471828,
+            "spd": 166,
+            "ts": 1489237499
+        },
+        {
+            "alt": 500,
+            "hd": 248,
+            "lat": 52.366333,
+            "lng": 13.479362,
+            "spd": 167,
+            "ts": 1489237493
+        },
+        {
+            "alt": 225,
+            "hd": 248,
+            "lat": 52.368008,
+            "lng": 13.486424,
+            "spd": 168,
+            "ts": 1489237487
+        },
+        {
+            "alt": 0,
+            "hd": 247,
+            "lat": 52.376598,
+            "lng": 13.5228,
+            "spd": 0,
+            "ts": 1489237457
+        },
+        {
+            "alt": 0,
+            "hd": 247,
+            "lat": 52.377262,
+            "lng": 13.525333,
+            "spd": 16,
+            "ts": 1489237431
+        },
+        {
+            "alt": 0,
+            "hd": 157,
+            "lat": 52.378136,
+            "lng": 13.525465,
+            "spd": 31,
+            "ts": 1489237402
+        },
+        {
+            "alt": 0,
+            "hd": 157,
+            "lat": 52.37923,
+            "lng": 13.52478,
+            "spd": 17,
+            "ts": 1489237377
+        },
+        {
+            "alt": 0,
+            "hd": 157,
+            "lat": 52.379482,
+            "lng": 13.524621,
+            "spd": 2,
+            "ts": 1489237367
+        },
+        {
+            "alt": 0,
+            "hd": 158,
+            "lat": 52.379494,
+            "lng": 13.524609,
+            "spd": 0,
+            "ts": 1489237271
+        },
+        {
+            "alt": 0,
+            "hd": 160,
+            "lat": 52.387321,
+            "lng": 13.520565,
+            "spd": 26,
+            "ts": 1489237222
+        },
+        {
+            "alt": 0,
+            "hd": 160,
+            "lat": 52.381222,
+            "lng": 13.523502,
+            "spd": 26,
+            "ts": 1489237212
+        },
+        {
+            "alt": 0,
+            "hd": 160,
+            "lat": 52.383533,
+            "lng": 13.522051,
+            "spd": 29,
+            "ts": 1489237162
+        },
+        {
+            "alt": 0,
+            "hd": 250,
+            "lat": 52.387459,
+            "lng": 13.521118,
+            "spd": 24,
+            "ts": 1489237069
+        },
+        {
+            "alt": 0,
+            "hd": 334,
+            "lat": 52.389702,
+            "lng": 13.52272,
+            "spd": 16,
+            "ts": 1489236799
+        }
+    ]
+}

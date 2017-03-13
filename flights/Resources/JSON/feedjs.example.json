@@ -1,0 +1,32 @@
+/* 
+  URL: https://data-live.flightradar24.com/zones/fcgi/feed.js?maxage=3600&reg=TC-OCG
+  
+  Parameters:
+    - flight: IATA Flight Code. Use this to filter for certain flights
+    - reg: Aircraft Registration Number
+    - maxage: Not sure yet.
+*/
+{
+    "full_count": 11699, /* Anzahl aller getrackten Flüge */
+    "version": 4, /*Version der API? */
+    "cb440f3": [ /* ID des Fluges,  */
+        "040045", /* ModeS */
+        48.4558, /* Breitengrad, Latitude */
+        -70.0235, /* Längengrad, Longitude */
+        75, /* Kurs, Track */
+        39000, /* Flughöhe */
+        510, /* Ground Speed */
+        "7372", /* Squawk, Transpondercode */
+        "F-CYQB1", /* Radar */
+        "B788", /* Flugzeugtyp */
+        "ET-AOO", /* Plane Registration */
+        1489236663, /* Timestamp */
+        "LAX", /* Origin Airport, IATA */
+        "DUB", /* Destination Airport, IATA */
+        "ET505", /* Flight Number, IATA */
+        0,
+        0, /* vertical speed
+        "ETH505", /* Flight Number, ICAO /*/
+        0
+    ]
+}
