@@ -6,7 +6,7 @@
 //  Copyright © 2017 Nathan Mattes. All rights reserved.
 //
 
-import UIKit
+import MapKit
 
 enum FlightJSONKeys {
     static let result = "result"
@@ -23,6 +23,21 @@ enum FlightJSONKeys {
                     }
                 }
                 static let identification = "identification"
+                static let airport = "airport"
+                
+                enum Airport {
+                    static let destination = "destination"
+                    
+                    static let origin = "origin"
+                    static let position = "position"
+                    static let name = "name"
+                    // as destionation and origin-airport share the same elements, we only need one here.
+                    enum Position {
+                        static let longitude = "longitude"
+                        static let latitude = "latitude"
+                    }
+                }
+                
                 enum Identification {
                     static let id = "id"
                 }
@@ -69,11 +84,38 @@ class FlightParser: NSObject {
                                                     }
                                                 }
                                                 
+                                                if dataKey == FlightJSONKeys.Result.Response.Data.airport, let airportDict = dataValue as? StringDictionary {
+                                                    for (airportKey, airportValue) in airportDict {
+                                                        if airportKey == FlightJSONKeys.Result.Response.Data.Airport.destination,
+                                                            let destinationDict = airportValue as? StringDictionary {
+                                                            let airport = Airport()
+
+                                                            for (destinationKey, destinationValue) in destinationDict {
+                                                                
+                                                                if destinationKey == FlightJSONKeys.Result.Response.Data.Airport.position,
+                                                                    let positionDict = destinationValue as? StringDictionary,
+                                                                    let longitude = positionDict[FlightJSONKeys.Result.Response.Data.Airport.Position.longitude] as? Double,
+                                                                    let latitude = positionDict[FlightJSONKeys.Result.Response.Data.Airport.Position.latitude] as? Double {
+                                                                    let coordinate = CLLocationCoordinate2D(latitude: latitude, longitude: longitude)
+                                                                    airport.coordinate = coordinate
+                                                                    
+                                                                }
+                                                                
+                                                                if destinationKey == FlightJSONKeys.Result.Response.Data.Airport.name,
+                                                                    let airportName = destinationValue as? String {
+                                                                    airport.name = airportName
+                                                                }
+                                                            }
+                                                            
+                                                            flight.destinationAirport = airport
+
+                                                        }
+                                                    }
+                                                }
                                             }
                                         }
                                     }
                                 }
-                                
                                 return flight
                             }
                         }

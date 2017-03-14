@@ -1,15 +1,14 @@
 //
-//  FlightPositionAnnotation.swift
+//  AirportAnnotation.swift
 //  flights
 //
-//  Created by Nathan Mattes on 11.03.17.
+//  Created by Nathan Mattes on 13.03.17.
 //  Copyright © 2017 Nathan Mattes. All rights reserved.
 //
 
 import MapKit
 
-class FlightPositionAnnotation: NSObject, MKAnnotation {
-    
+class AirportAnnotation: NSObject, MKAnnotation {
     var identifier: String
     var coordinate: CLLocationCoordinate2D
     var title: String?

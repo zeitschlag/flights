@@ -10,6 +10,8 @@
 		D8429C541E75A94600757342 /* Flight.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8429C531E75A94600757342 /* Flight.swift */; };
 		D8429C561E75AD4200757342 /* FlightParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8429C551E75AD4200757342 /* FlightParser.swift */; };
 		D8429C591E75CB5800757342 /* FlightsErrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8429C581E75CB5800757342 /* FlightsErrors.swift */; };
+		D8814A151E773EE7001A82AA /* Airport.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8814A141E773EE7001A82AA /* Airport.swift */; };
+		D8814A171E7741EC001A82AA /* AirportAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8814A161E7741EC001A82AA /* AirportAnnotation.swift */; };
 		D8D6CC831E74392300513A6B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8D6CC821E74392300513A6B /* AppDelegate.swift */; };
 		D8D6CC881E74392300513A6B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D8D6CC861E74392300513A6B /* Main.storyboard */; };
 		D8D6CC8A1E74392300513A6B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D8D6CC891E74392300513A6B /* Assets.xcassets */; };
@@ -50,6 +52,8 @@
 		D8429C531E75A94600757342 /* Flight.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Flight.swift; sourceTree = "<group>"; };
 		D8429C551E75AD4200757342 /* FlightParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FlightParser.swift; path = ../FlightParser.swift; sourceTree = "<group>"; };
 		D8429C581E75CB5800757342 /* FlightsErrors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlightsErrors.swift; sourceTree = "<group>"; };
+		D8814A141E773EE7001A82AA /* Airport.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Airport.swift; sourceTree = "<group>"; };
+		D8814A161E7741EC001A82AA /* AirportAnnotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AirportAnnotation.swift; sourceTree = "<group>"; };
 		D8D6CC7F1E74392300513A6B /* flights.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = flights.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8D6CC821E74392300513A6B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D8D6CC871E74392300513A6B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -201,6 +205,8 @@
 				D8D6CCBE1E7454C500513A6B /* FlightRadarAPI.swift */,
 				D8D6CCC01E7454D200513A6B /* FlightManager.swift */,
 				D8D6CCC21E7466A000513A6B /* FlightPosition.swift */,
+				D8814A141E773EE7001A82AA /* Airport.swift */,
+				D8814A161E7741EC001A82AA /* AirportAnnotation.swift */,
 				D8D6CCBC1E744E1A00513A6B /* FlightPositionAnnotation.swift */,
 				D8429C531E75A94600757342 /* Flight.swift */,
 			);
@@ -377,7 +383,9 @@
 				D8429C561E75AD4200757342 /* FlightParser.swift in Sources */,
 				D8429C591E75CB5800757342 /* FlightsErrors.swift in Sources */,
 				D8429C541E75A94600757342 /* Flight.swift in Sources */,
+				D8814A151E773EE7001A82AA /* Airport.swift in Sources */,
 				D8D6CCC31E7466A000513A6B /* FlightPosition.swift in Sources */,
+				D8814A171E7741EC001A82AA /* AirportAnnotation.swift in Sources */,
 				D8D6CCBB1E743F4800513A6B /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

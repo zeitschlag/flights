@@ -9,6 +9,11 @@
 import UIKit
 import MapKit
 
+enum AnnotationIdentifier {
+    static let Airport = "airportAnnotationIdentifier"
+    static let FlightPosition = "flightPositionAnnotationIdentifier"
+}
+
 class MainViewController: UIViewController {
 
     @IBOutlet weak var mapView: MKMapView!
@@ -36,16 +41,26 @@ class MainViewController: UIViewController {
                 return
             }
             
+            // Annotation for current Position of the flight
             let location = CLLocationCoordinate2D(latitude: Double(currentFlightPosition.latitude), longitude: Double(currentFlightPosition.longitude))
-            let annotation = FlightPositionAnnotation(at: location, withTitle: flightId.uppercased())
+            
+            let title = "Current position of \(flightId.uppercased())"
+            let annotation = FlightPositionAnnotation(withIdentifier: AnnotationIdentifier.FlightPosition, at: location, withTitle: title)
             annotation.subtitle = flight.aircraft ?? nil
             
             self?.mapView.addAnnotation(annotation)
             
+            if let destinationAirport = flight.destinationAirport, let destinationAirportLocation = destinationAirport.coordinate, let airportName = destinationAirport.name {
+                let destionationAirportAnnotation = AirportAnnotation(withIdentifier: AnnotationIdentifier.Airport, at: destinationAirportLocation, withTitle: airportName)
+                
+                self?.mapView.addAnnotation(destionationAirportAnnotation)
+            }
+            
             OperationQueue.main.addOperation {
-                //TODO: Center Map
+                //TODO: Center MapView
                 self?.mapView.setCenter(location, animated: true)
             }
+
         }) { [weak self] (error) in
             let alert = UIAlertController(title: "Something went wrong 😟", message: error.localizedDescription, preferredStyle: .alert)
             let okAction = UIAlertAction(title: "OK", style: .cancel, handler: nil)
@@ -58,20 +73,42 @@ class MainViewController: UIViewController {
 extension MainViewController: MKMapViewDelegate {
     
     func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
-        guard let annotation = annotation as? FlightPositionAnnotation else {
-            return nil
+        
+        var annotationView = MKPinAnnotationView()
+        
+        if let annotation = annotation as? FlightPositionAnnotation {
+            if let dequeuedView = mapView.dequeueReusableAnnotationView(withIdentifier: AnnotationIdentifier.FlightPosition) as? MKPinAnnotationView {
+                annotationView = dequeuedView
+                annotationView.annotation = annotation
+                annotationView.pinTintColor = .blue
+                annotationView.canShowCallout = true
+            } else {
+                annotationView =  MKPinAnnotationView(annotation: annotation, reuseIdentifier: AnnotationIdentifier.FlightPosition)
+                annotationView.pinTintColor = .blue
+                annotationView.canShowCallout = true
+            }
+            
+            return annotationView
+            
         }
         
-        let identifier = "plane"
-        var annotationView: MKPinAnnotationView
-        
-        if let annotationView = mapView.dequeueReusableAnnotationView(withIdentifier: identifier) {
-            annotationView.annotation = annotation
+        if let annotation = annotation as? AirportAnnotation {
+            if let dequeuedView = mapView.dequeueReusableAnnotationView(withIdentifier: AnnotationIdentifier.Airport) as? MKPinAnnotationView {
+                annotationView = dequeuedView
+                annotationView.annotation = annotation
+                annotationView.pinTintColor = UIColor.green
+                annotationView.canShowCallout = true
+            } else {
+                annotationView =  MKPinAnnotationView(annotation: annotation, reuseIdentifier: AnnotationIdentifier.Airport)
+                annotationView.pinTintColor = UIColor.green
+                annotationView.canShowCallout = true
+            }
+            
             return annotationView
-        } else {
-            annotationView = MKPinAnnotationView(annotation: annotation, reuseIdentifier: identifier)
-            annotationView.canShowCallout = true
-            return annotationView
+            
         }
+        
+        return nil
+        
     }
 }

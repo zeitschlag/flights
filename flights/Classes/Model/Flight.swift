@@ -14,4 +14,7 @@ class Flight: NSObject {
     var airline: String?
     
     var currentFlightPosition: FlightPosition?
+    
+    var destinationAirport: Airport?
+    var originAirport: Airport?
 }
