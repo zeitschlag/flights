@@ -51,13 +51,20 @@ class MainViewController: UIViewController {
             self?.mapView.addAnnotation(annotation)
             
             if let destinationAirport = flight.destinationAirport, let destinationAirportLocation = destinationAirport.coordinate, let airportName = destinationAirport.name {
-                let destionationAirportAnnotation = AirportAnnotation(withIdentifier: AnnotationIdentifier.Airport, at: destinationAirportLocation, withTitle: airportName)
+                let destionationAirportAnnotation = AirportAnnotation(withIdentifier: AnnotationIdentifier.Airport, at: destinationAirportLocation, withTitle: airportName, airportType: .Destination)
                 
                 self?.mapView.addAnnotation(destionationAirportAnnotation)
             }
             
+            if let originAirport = flight.originAirport, let originAirportLocation = originAirport.coordinate, let airportName = originAirport.name {
+                let originAirportAnnotation = AirportAnnotation(withIdentifier: AnnotationIdentifier.Airport, at: originAirportLocation, withTitle: airportName, airportType: .Origin)
+                
+                self?.mapView.addAnnotation(originAirportAnnotation)
+            }
+            
             OperationQueue.main.addOperation {
                 //TODO: Center MapView
+                
                 self?.mapView.setCenter(location, animated: true)
             }
 
@@ -93,16 +100,27 @@ extension MainViewController: MKMapViewDelegate {
         }
         
         if let annotation = annotation as? AirportAnnotation {
+            
+            var pinTintColor = UIColor.clear
+            
+            switch annotation.type {
+            case .Origin:
+                pinTintColor = .red
+            case .Destination:
+                pinTintColor = .green
+            }
+            
             if let dequeuedView = mapView.dequeueReusableAnnotationView(withIdentifier: AnnotationIdentifier.Airport) as? MKPinAnnotationView {
                 annotationView = dequeuedView
                 annotationView.annotation = annotation
-                annotationView.pinTintColor = UIColor.green
-                annotationView.canShowCallout = true
+                
             } else {
-                annotationView =  MKPinAnnotationView(annotation: annotation, reuseIdentifier: AnnotationIdentifier.Airport)
-                annotationView.pinTintColor = UIColor.green
+                annotationView = MKPinAnnotationView(annotation: annotation, reuseIdentifier: AnnotationIdentifier.Airport)
                 annotationView.canShowCallout = true
             }
+            
+            annotationView.canShowCallout = true
+            annotationView.pinTintColor = pinTintColor
             
             return annotationView
             

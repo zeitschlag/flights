@@ -88,7 +88,7 @@ class FlightParser: NSObject {
                                                     for (airportKey, airportValue) in airportDict {
                                                         if airportKey == FlightJSONKeys.Result.Response.Data.Airport.destination,
                                                             let destinationDict = airportValue as? StringDictionary {
-                                                            let airport = Airport()
+                                                            let destinationAirport = Airport()
 
                                                             for (destinationKey, destinationValue) in destinationDict {
                                                                 
@@ -97,18 +97,40 @@ class FlightParser: NSObject {
                                                                     let longitude = positionDict[FlightJSONKeys.Result.Response.Data.Airport.Position.longitude] as? Double,
                                                                     let latitude = positionDict[FlightJSONKeys.Result.Response.Data.Airport.Position.latitude] as? Double {
                                                                     let coordinate = CLLocationCoordinate2D(latitude: latitude, longitude: longitude)
-                                                                    airport.coordinate = coordinate
+                                                                    destinationAirport.coordinate = coordinate
                                                                     
                                                                 }
                                                                 
                                                                 if destinationKey == FlightJSONKeys.Result.Response.Data.Airport.name,
                                                                     let airportName = destinationValue as? String {
-                                                                    airport.name = airportName
+                                                                    destinationAirport.name = airportName
                                                                 }
                                                             }
                                                             
-                                                            flight.destinationAirport = airport
-
+                                                            flight.destinationAirport = destinationAirport
+                                                        }
+                                                        
+                                                        if airportKey == FlightJSONKeys.Result.Response.Data.Airport.origin,
+                                                            let originDict = airportValue as? StringDictionary {
+                                                            
+                                                            let originAirport = Airport()
+                                                            
+                                                            for (originKey, originValue) in originDict {
+                                                                if originKey == FlightJSONKeys.Result.Response.Data.Airport.position,
+                                                                    let positionDict = originValue as? StringDictionary,
+                                                                    let longitude = positionDict[FlightJSONKeys.Result.Response.Data.Airport.Position.longitude] as? Double,
+                                                                    let latitude = positionDict[FlightJSONKeys.Result.Response.Data.Airport.Position.latitude] as? Double {
+                                                                    let coordinate = CLLocationCoordinate2D(latitude: latitude, longitude: longitude)
+                                                                    originAirport.coordinate = coordinate
+                                                                }
+                                                                
+                                                                if originKey == FlightJSONKeys.Result.Response.Data.Airport.name,
+                                                                    let airportName = originValue as? String {
+                                                                    originAirport.name = airportName
+                                                                }
+                                                            }
+                                                            
+                                                            flight.originAirport = originAirport
                                                         }
                                                     }
                                                 }
