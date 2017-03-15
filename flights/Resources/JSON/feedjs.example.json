@@ -9,7 +9,7 @@
 {
     "full_count": 11699, /* Anzahl aller getrackten Flüge */
     "version": 4, /*Version der API? */
-    "cb440f3": [ /* ID des Fluges,  */
+    "cb440f3": [ /* ID des Fluges, FlightRadarIdentfier */
         "040045", /* ModeS */
         48.4558, /* Breitengrad, Latitude */
         -70.0235, /* Längengrad, Longitude */

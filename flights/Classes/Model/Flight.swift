@@ -9,6 +9,8 @@
 import UIKit
 
 class Flight: NSObject {
+    
+    /// Flight-ID from FlightRadar
     var identifier: String?
     var aircraft: String?
     var airline: String?
