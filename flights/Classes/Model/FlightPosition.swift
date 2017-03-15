@@ -11,13 +11,14 @@ import UIKit
 class FlightPosition: NSObject {
     var longitude: Float
     var latitude: Float
-    var altitude: Float?
+    var altitude: Int
     var flightId: String
 
     
-    init(longitude: Float, latitude: Float, flightId: String) {
+    init(longitude: Float, latitude: Float, altitude: Int, flightId: String) {
         self.longitude = longitude
         self.latitude = latitude
+        self.altitude = altitude
         self.flightId = flightId
         
         super.init()

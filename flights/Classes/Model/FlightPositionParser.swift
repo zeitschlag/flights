@@ -31,10 +31,13 @@ class FlightPositionParser: NSObject {
                     
                     if let flightPositionData = value as? [Any],
                         let latitude = flightPositionData[1] as? Float,
-                        let longitude = flightPositionData[2] as? Float {
+                        let longitude = flightPositionData[2] as? Float,
+                        // let track = flightPositionData[3] as? Int,
+                        let altitude = flightPositionData[4] as? Int {
+                        
                         let flightId = key
                         
-                        let flightPosition = FlightPosition(longitude: longitude, latitude: latitude, flightId: flightId)
+                        let flightPosition = FlightPosition(longitude: longitude, latitude: latitude, altitude: altitude, flightId: flightId)
                         flightPositions.append(flightPosition)
                     }
                 }
