@@ -6,4 +6,4 @@ It's basically a small version of the [FlightAware](http://de.flightaware.com/mo
 
 It's written in Swift and uses MBProgressHUD and Carthage so far. I consider myself still a beginner, so don't judge me too hard The data comes from Flightradar24, so go and download their app instead of using this thingy. It's much better from every possible perspective.
 
-If you have any questions, [send me a tweet](https://twitter.com/zeitschlag) or open an issue.
+If you have any questions, [send me a tweet](https://twitter.com/zeitschlag) or open an issue. I consider myself still a beginner, so feel free to criticize the code. Hopefully I learn something here ;)
