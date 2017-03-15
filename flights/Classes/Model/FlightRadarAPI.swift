@@ -54,7 +54,7 @@ class FlightRadarAPI: NSObject {
     
     /// Asks the API for the flight position of the flight with IATA-code flightId
     func flightPositionForFlight(withId iataFlightId: String, success: @escaping ([FlightPosition]) -> (), failure: @escaping (Error)->()) {        
-        if let url = URL(string: "https://data-live.flightradar24.com/zones/fcgi/feed.js?maxage=7200&flight=\(iataFlightId)") {
+        if let url = URL(string: "https://data-live.flightradar24.com/zones/fcgi/feed.js?maxage=7200&flight=\(iataFlightId)&limit=1") {
             let urlRequest = URLRequest(url: url, cachePolicy: URLRequest.CachePolicy.reloadIgnoringLocalAndRemoteCacheData, timeoutInterval: 60.0)
             let dataTask = URLSession.shared.dataTask(with: urlRequest, completionHandler: { (data, response, error) in
                 if let error = error {
