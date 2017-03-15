@@ -8,6 +8,7 @@
 
 import UIKit
 import MapKit
+import MBProgressHUD
 
 enum AnnotationIdentifier {
     static let Airport = "airportAnnotationIdentifier"
@@ -18,6 +19,7 @@ class MainViewController: UIViewController {
 
     @IBOutlet weak var mapView: MKMapView!
     @IBOutlet weak var flightIdTextField: UITextField!
+    @IBOutlet weak var searchButton: UIBarButtonItem!
     
     override func viewDidLoad() {
         
@@ -34,8 +36,17 @@ class MainViewController: UIViewController {
         }
 
         mapView.removeAnnotations(mapView.annotations)
+        MBProgressHUD.showAdded(to: self.view, animated: true)
+        searchButton.isEnabled = false
         
         FlightManager.shared.flightWith(iataCode: flightId.uppercased(), success: { [weak self] (flight) in
+            
+            OperationQueue.main.addOperation {
+                if let view = self?.view {
+                    MBProgressHUD.hide(for: view, animated: true)
+                    self?.searchButton.isEnabled = true
+                }
+            }
             
             guard let currentFlightPosition = flight.currentFlightPosition else {
                 return
@@ -69,10 +80,19 @@ class MainViewController: UIViewController {
             }
 
         }) { [weak self] (error) in
+            
             let alert = UIAlertController(title: "Something went wrong 😟", message: error.localizedDescription, preferredStyle: .alert)
             let okAction = UIAlertAction(title: "OK", style: .cancel, handler: nil)
             alert.addAction(okAction)
-            self?.present(alert, animated: true, completion: nil)
+            
+            
+            OperationQueue.main.addOperation {
+                if let view = self?.view {
+                    MBProgressHUD.hide(for: view, animated: true)
+                    self?.searchButton.isEnabled = true
+                    self?.present(alert, animated: true, completion: nil)
+                }
+            }
         }
     }
 }

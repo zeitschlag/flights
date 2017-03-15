@@ -54,6 +54,7 @@
                     <connections>
                         <outlet property="flightIdTextField" destination="U1b-vA-Rmi" id="dZY-eV-aG5"/>
                         <outlet property="mapView" destination="IAZ-C0-C7e" id="EDC-Th-QWF"/>
+                        <outlet property="searchButton" destination="yM4-kX-87p" id="aQm-pf-Hf8"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
